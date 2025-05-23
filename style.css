@@ -81,7 +81,8 @@ body {
     border-radius: 5px;
     margin: 0 10px;
   }
-  
+  /*button*/
+
   .carousel-buttons button:hover {
     background: #0056b3;
   }
