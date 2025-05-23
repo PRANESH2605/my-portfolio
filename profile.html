@@ -3,45 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>Profile - PRANESH S</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f4f4;
     }
-    nav {
-    background-color: #0056b3;
-    padding: 0.5rem 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 1.5rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
 
     .container {
       max-width: 900px;
-      margin: 3rem auto;
+      margin: 4rem auto;
       padding: 2rem;
       background-color: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -68,23 +39,6 @@
       font-size: 2rem;
       color: #007BFF;
     }
-    body {
-      background-color: #f4f4f4;
-      font-family: Arial, sans-serif;
-    }
-    .profile-container {
-      max-width: 800px;
-      margin: 50px auto;
-    }
-    .progress {
-      height: 25px;
-      margin-bottom: 20px;
-    }
-    .resume-btn {
-      display: block;
-      margin: 30px auto;
-    }
-
 
     .container-content .text p {
       font-size: 1.1rem;
@@ -117,75 +71,14 @@
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="portfolio.html">Home</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="interests.html">Interests</a></li>
-      <li><a href="contact.html">Contact</a></li>
-     
-    </ul>
-  </nav>
 
   <div class="container">
     <div class="container-content">
       <img src="my img.jpg" alt="PRANESH S" />
       <div class="text">
-        <h1><b>PRANESH S</b></h1>
-        <p><b>Web Developer | Designer | NSS Volunteer</b></p>
-        <h4><b><u>ABOUT ME</u></b></h4>
-        <P>I am Pranesh S, currently pursuing my 2nd year of undergraduate studies at Knowledge Institute of Technology (KIOT), Salem. I am passionate about learning new technologies and constantly improving my skills. I enjoy working on projects that challenge me and help me grow both technically and personally. I am eager to explore opportunities that allow me to contribute, collaborate, and learn in real-world environments.</P>
+        <h1>PRANESH S</h1>
+        <p>Web Developer | Designer | NSS Volunteer</p>
       </div>
-      <div class="container profile-container">
-
-      <h3 class="mt-5"><b>My Skills</b></h3>
-  <label><b>HTML5</b></label>
-  <div class="progress">
-    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" id="html-bar">0%</div>
-  </div>
-  <label><b>CSS3</b></label>
-  <div class="progress">
-    <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" id="css-bar">0%</div>
-  </div>
-  <label><b>JavaScript</b></label>
-  <div class="progress">
-    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" id="js-bar">0%</div>
-  </div>
-  <label><b>Bootstrap</b></label>
-  <div class="progress">
-    <div class="progress-bar bg-success" role="progressbar" style="width: 0%" id="bootstrap-bar">0%</div>
-  </div>
-
-  <a href="My profile.pdf" class="btn btn-dark resume-btn" download>Download My Resume</a>
-</div>
-<!-- JavaScript Animation -->
-<script>
-  function animateSkillBar(id, target) {
-    let bar = document.getElementById(id);
-    let width = 0;
-    let interval = setInterval(() => {
-      if (width >= target) {
-        clearInterval(interval);
-      } else {
-        width++;
-        bar.style.width = width + '%';
-        bar.innerText = width + '%';
-      }
-    }, 20);
-  }
-
-  // Animate when page loads
-  window.onload = function() {
-    animateSkillBar('html-bar', 90);
-    animateSkillBar('css-bar', 80);
-    animateSkillBar('js-bar', 70);
-    animateSkillBar('bootstrap-bar', 75);
-  };
-</script>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
       <div class="back-home">
         <a href="portfolio.html">← Return to Home</a>
       </div>
